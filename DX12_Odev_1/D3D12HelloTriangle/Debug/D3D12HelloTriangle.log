@@ -1,0 +1,13 @@
+﻿F:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(372,5): warning MSB8004: Intermediate dizini sonda bir eğik çizgiyle bitmiyor. Intermediate dizininin düzgün değerlendirilmesi için bu eğik çizgi gerekli olduğundan bu oluşturma örneği eğik çizgiyi ekleyecek.
+F:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(373,5): warning MSB8004: Output dizini sonda bir eğik çizgiyle bitmiyor. Output dizininin düzgün değerlendirilmesi için bu eğik çizgi gerekli olduğundan bu oluşturma örneği eğik çizgiyi ekleyecek.
+  D3D12HelloTriangle.cpp
+f:\users\baydin\desktop\dx12_odev_1\d3d12hellotriangle\d3d12hellotriangle.cpp(416): warning C4305: '+=': 'double' iken 'float' olarak kesildi
+f:\users\baydin\desktop\dx12_odev_1\d3d12hellotriangle\d3d12hellotriangle.cpp(427): warning C4305: 'bağımsız değişken': 'double' iken 'float' olarak kesildi
+f:\users\baydin\desktop\dx12_odev_1\d3d12hellotriangle\d3d12hellotriangle.cpp(435): warning C4305: 'bağımsız değişken': 'double' iken 'float' olarak kesildi
+f:\users\baydin\desktop\dx12_odev_1\d3d12hellotriangle\d3d12hellotriangle.cpp(443): warning C4305: 'bağımsız değişken': 'double' iken 'float' olarak kesildi
+f:\users\baydin\desktop\dx12_odev_1\d3d12hellotriangle\d3d12hellotriangle.cpp(451): warning C4305: 'bağımsız değişken': 'double' iken 'float' olarak kesildi
+f:\users\baydin\desktop\dx12_odev_1\d3d12hellotriangle\d3d12hellotriangle.cpp(459): warning C4305: 'bağımsız değişken': 'double' iken 'float' olarak kesildi
+f:\users\baydin\desktop\dx12_odev_1\d3d12hellotriangle\d3d12hellotriangle.cpp(501): warning C4244: '=': 'float' - 'LONG' dönüşümü; veri kaybı olabilir
+f:\users\baydin\desktop\dx12_odev_1\d3d12hellotriangle\d3d12hellotriangle.cpp(502): warning C4244: '=': 'float' - 'LONG' dönüşümü; veri kaybı olabilir
+  D3D12HelloTriangle.vcxproj -> F:\Users\BAYDIN\Desktop\DX12_Odev_1\D3D12HelloTriangle\Debug\D3D12HelloTriangle.exe
+  D3D12HelloTriangle.vcxproj -> Debug\D3D12HelloTriangle.pdb (Partial PDB)
