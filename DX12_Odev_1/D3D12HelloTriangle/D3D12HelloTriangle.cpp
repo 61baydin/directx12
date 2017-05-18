@@ -12,7 +12,7 @@
 #include <string>
 #include <wrl.h>
 #include "resource.h"
-#define PI 3.141592654				// Pi sayisi tanimlandi
+
 
 using namespace DirectX;
 using Microsoft::WRL::ComPtr;
@@ -283,8 +283,8 @@ void OnInit()
 		psoDesc.RTVFormats[0]						= DXGI_FORMAT_R8G8B8A8_UNORM;
 		psoDesc.DSVFormat							= DXGI_FORMAT_D32_FLOAT;
 		psoDesc.SampleDesc.Count					= 1;
-		psoDesc.RasterizerState.CullMode			= D3D12_CULL_MODE_BACK;		// Backface Culling yapmasý için : D3D12_CULL_MODE_BACK 
-		psoDesc.RasterizerState.FillMode			= D3D12_FILL_MODE_SOLID;	// Sadece kenarlarý render etmek için : D3D12_FILL_MODE_WIREFRAME 
+		psoDesc.RasterizerState.CullMode			= D3D12_CULL_MODE_BACK;		// Backface Culling yapmasÃ½ iÃ§in : D3D12_CULL_MODE_BACK 
+		psoDesc.RasterizerState.FillMode			= D3D12_FILL_MODE_SOLID;	// Sadece kenarlarÃ½ render etmek iÃ§in : D3D12_FILL_MODE_WIREFRAME 
 
 		ThrowIfFailed(m_device->CreateGraphicsPipelineState(&psoDesc, IID_PPV_ARGS(&m_pipelineState)));
 	}
@@ -424,7 +424,7 @@ void OnUpdate()
 	m_constantBufferData_ChangesEveryFrame.color = XMFLOAT4(1, 0, 0, 1);
 
 	//arka
-	XMMATRIX mRotate0 = XMMatrixRotationY(PI);
+	XMMATRIX mRotate0 = XMMatrixRotationY(XM_PI);
 	mTranslate = XMMatrixTranslation(0.0f, 0.0f, 1.0f);
 	g_World = mRotate0*mTranslate*mRotate;
 	m_constantBufferData_ChangesEveryFrame.mWorld = XMMatrixTranspose(g_World);
@@ -432,7 +432,7 @@ void OnUpdate()
 	m_constantBufferData_ChangesEveryFrame.color = XMFLOAT4(0, 1, 0, 1);
 
 	//sag
-	XMMATRIX mRotate1 = XMMatrixRotationY(-PI/2);
+	XMMATRIX mRotate1 = XMMatrixRotationY(-XM_PI/2);
 	mTranslate = XMMatrixTranslation(1.0f, 0.0f, 0.0f);
 	g_World = mRotate1*mTranslate*mRotate;
 	m_constantBufferData_ChangesEveryFrame.mWorld = XMMatrixTranspose(g_World);
@@ -440,7 +440,7 @@ void OnUpdate()
 	m_constantBufferData_ChangesEveryFrame.color = XMFLOAT4(0, 0, 1, 1);
 
 	//sol
-	XMMATRIX mRotate2 = XMMatrixRotationY(PI / 2);
+	XMMATRIX mRotate2 = XMMatrixRotationY(XM_PI / 2);
 	mTranslate = XMMatrixTranslation(-1.0f, 0.0f, 0.0f);
 	g_World = mRotate2*mTranslate*mRotate;
 	m_constantBufferData_ChangesEveryFrame.mWorld = XMMatrixTranspose(g_World);
@@ -448,7 +448,7 @@ void OnUpdate()
 	m_constantBufferData_ChangesEveryFrame.color = XMFLOAT4(1, 0, 1, 1);
 
 	//ust
-	XMMATRIX mRotate3 = XMMatrixRotationX(PI/2);
+	XMMATRIX mRotate3 = XMMatrixRotationX(XM_PI/2);
 	mTranslate = XMMatrixTranslation(0.0f, 1.0f, 0.0f);
 	g_World = mRotate3*mTranslate*mRotate;
 	m_constantBufferData_ChangesEveryFrame.mWorld = XMMatrixTranspose(g_World);
@@ -456,7 +456,7 @@ void OnUpdate()
 	m_constantBufferData_ChangesEveryFrame.color = XMFLOAT4(125, 100, 24, 1);
 
 	//alt
-	XMMATRIX mRotate4 = XMMatrixRotationX(-PI / 2);
+	XMMATRIX mRotate4 = XMMatrixRotationX(-XM_PI / 2);
 	mTranslate = XMMatrixTranslation(0.0f, -1.0f, 0.0f);
 	g_World = mRotate4*mTranslate*mRotate;
 	m_constantBufferData_ChangesEveryFrame.mWorld = XMMatrixTranspose(g_World);
